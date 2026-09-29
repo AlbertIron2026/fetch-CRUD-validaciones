@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Concesionario</title>
+  </head>
+  <body>
+    <h1>probando nuestra propia API!</h1>
+    <div id="container">
+    <div id="inputsusuario">
+      <h2>Ver todos los coches</h2>
+      <button id="vertodoscoches" onclick="verTodos()">
+        ver todos los coches
+      </button>
+      <br /><br />
+
+      <h2>Ver un coche por su id</h2>
+      <label for="idcoche">escribe el id del coche:</label>
+      <input type="number" name="" id="idcoche" />
+      <button id="veruncoche" onclick="verUno()">ver un coche</button>
+      <br /><br />
+
+      <h2>Añadir coche</h2>
+
+      <fieldset>
+        <input type="text" id="marca" placeholder="Marca" />
+        <input type="text" id="modelo" placeholder="Modelo" />
+        <input type="text" id="matricula" placeholder="Matrícula" />
+        <br>
+        <input type="number" id="precio" placeholder="Precio" />
+        <input type="number" id="marcaId" placeholder="ID de la marca" />
+        <button onclick="crearCoche()">Añadir coche</button>
+        <br />
+        <small
+          >ids marcas: Toyota:1, Mercedes:2, Cupra: 3, Audi:4, Peugeot:5</small
+        >
+      </fieldset>
+
+      <h2>Borrar un coche por su id</h2>
+      <label for="idcocheborrar">escribe el id del coche:</label>
+      <input type="number" name="" id="idcocheborrar" />
+      <button id="veruncoche" onclick="borrarCoche()">borrar coche</button>
+      <br /><br />
+    </div>
+    <div id="resultado">
+      <p id="datosCoche"></p>
+    </div>
+</div>
+    <script src="main.js"></script>
+  </body>
+</html>
